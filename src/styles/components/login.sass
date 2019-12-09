@@ -1,0 +1,68 @@
+@import '../vars'
+@import '../mixins'
+
+.login-content
+  position: relative
+  display: flex
+  justify-content: center
+  height: 100vh
+  align-items: center
+  //background: url(../../assets/img/login-bg.jpg) no-repeat center
+  background-size: cover
+  .logo
+    width: 60%
+    max-width: 280px
+    margin: 0 auto 20px
+    padding: 15px
+    border-radius: 5px
+    background-color: #fff
+    text-align: center
+    img
+      width: 100%
+  h1
+    margin: 0 0 10px
+    +b(mobile)
+      margin: 0 0 20px
+
+.login-form
+  width: 100%
+  padding: 7%
+  border-radius: 5px
+  background-color: #fff
+  +b(mobile)
+    max-width: 606px
+    margin: 0 auto
+    padding: 7% 12% 5%
+  .btn
+    margin-top: 10px
+    +b(mobile)
+      margin-top: unset
+
+.link
+  display: block
+  margin-top: 15px
+  +b(mobile)
+    margin-top: 30px
+
+.login-footer
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  padding: 10px 0
+  background-color: rgba(0, 0, 0, .8)
+  text-align: center
+  font-size: 14px
+  font-weight: 500
+  color: #fff
+  +b(mobile)
+    padding: 17px 0
+    font-size: 18px
+  span
+    display: inline-block
+    vertical-align: middle
+    margin-right: 10px
+    font-size: 28px
+    line-height: 1
+  a
+    color: #fff

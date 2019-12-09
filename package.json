@@ -1,0 +1,47 @@
+{
+  "name": "vtiger",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
+    "css-reset-and-normalize-sass": "^0.1.2",
+    "final-form": "^4.16.1",
+    "history": "latest",
+    "node-sass": "^4.12.0",
+    "normalize.css": "^8.0.1",
+    "react": "latest",
+    "react-datepicker": "^2.8.0",
+    "react-dom": "latest",
+    "react-file-base64": "^1.0.3",
+    "react-final-form": "^6.3.0",
+    "react-redux": "latest",
+    "react-router-dom": "latest",
+    "react-scripts": "latest",
+    "react-signature-canvas": "^1.0.2",
+    "react-spring-3d-carousel": "^1.1.4",
+    "react-virtualized": "latest",
+    "reactjs-popup": "^1.4.2",
+    "redux": "latest",
+    "redux-logger": "latest",
+    "redux-thunk": "latest",
+    "signature_pad": "^3.0.0-beta.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "GENERATE_SOURCEMAP=false NODE_ENV=production react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">1%",
+    "not dead",
+    "not ie <= 11",
+    "last 16 version",
+    "not op_mini all"
+  ],
+  "homepage": "/"
+}

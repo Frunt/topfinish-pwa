@@ -1,0 +1,192 @@
+@import './fonts'
+@import './vars'
+@import './mixins'
+
+html
+  font-size: 100%
+
+body
+  position: relative
+  min-width: 320px
+  height: 100%
+  background-color: #1E1E2F
+  font-family: "Poppins", sans-serif
+  font-weight: 400
+  font-size: 16px
+  line-height: normal
+  color: $text
+  overflow-x: hidden
+  +b(mobile)
+    font-size: 18px
+
+ul,
+ul li
+  list-style-type: none
+
+h1
+  margin-bottom: 30px
+  font-size: 30px
+  +b(mobile)
+    margin-bottom: 50px
+    font-size: 36px
+
+.h1
+  margin-bottom: 0
+
+h2
+  font-size: 22px
+  font-weight: 600
+  span
+    font-weight: 400
+  +b(mobile)
+    font-size: 24px
+
+.h2
+  margin-bottom: 40px
+
+h3
+  font-size: 18px
+  font-weight: 600
+
+.h3
+  margin-bottom: 20px
+
+.thin
+  font-weight: 400
+
+.small-text
+  font-size: 14px
+
+a
+  text-decoration: none
+  color: $accent
+
+img
+  display: inline-block
+  max-width: 100%
+  height: auto
+.home-holder
+  .heading-holder
+    margin-bottom: 160px
+.list
+  margin: 15px 0
+  padding-left: 30px
+  +b(mobile)
+    padding-left: 50px
+  li
+    margin-bottom: 10px
+    padding-left: 20px
+    position: relative
+    &::before
+      +pseudo
+      top: 50%
+      transform: translateY(-50%)
+      width: 7px
+      height: 7px
+      border-radius: 50%
+      background-color: $text
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea
+  vertical-align: middle
+
+textarea
+  resize: none
+
+section
+  position: relative
+
+input,
+select,
+button
+  outline: none
+
+input:not([type='file']):not([type='checkbox']):not([type='radio'])
+  box-shadow: none!important
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+*, *:before, *:after
+  box-sizing: border-box
+
+.container
+  width: 100%
+  padding: 0 15px
+  position: relative
+  +b(mobile)
+    max-width: 768px
+    margin: 0 auto
+    padding: 0 43px
+
+main.container
+  padding-top: 50px
+  padding-bottom: 50px
+
+.two-column
+  +b(mobile)
+    display: flex
+  .main-content
+    margin-bottom: 20px
+    padding: 30px 20px
+    +b(mobile)
+      width: 70%
+      margin-bottom: unset
+      padding: 36px 40px 63px
+  .sidebar
+    padding: 30px 20px
+    +b(mobile)
+      width: 30%
+      margin-left: 15px
+      padding: 42px 18px
+
+.flex-container
+  +b(mobile)
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__item
+    +b(mobile)
+      width: 48%
+    h2
+      margin-bottom: 25px
+
+.flex-nowrap
+  +b(mobile)
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.margin-top
+  margin-top: 50px
+
+.margin-bottom
+  margin-bottom: 50px
+
+.margin-content
+  margin-top: 100px
+
+.dark-grey
+  border-radius: 5px
+  background-color: $dark-bg
+
+.light-grey
+  border-radius: 5px
+  background-color: $light-bg
+
+.gradient-bg
+  background: $gradient
+
+.grey-bg
+  background: $grey
+
+.brown-bg
+  background: $brown
+
+.center
+  text-align: center
